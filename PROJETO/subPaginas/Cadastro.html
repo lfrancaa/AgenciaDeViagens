@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro Cliente</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../subPaginas/subPastaCSS/Cadastro.css">
+</head>
+
+<body>
+    <div class="section">
+        <!-- INÍCIO BARRA DE NAVEGAÇÃO -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                <div class="container-fluid">
+                    <div>
+                        <img src="../../IMG/Logo.png" width="250px" height="120px">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../Home.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="Cadastro.html">Cadastro</a>
+                            <a class="nav-link" href="Destino pg.01.html">Destino</a>
+                            <a class="nav-link" href="Promoções.html">Promoções</a>
+                            <a class="nav-link" href="../subPaginas/PagamentoD01.html">Pagamento</a>
+                            <a class="nav-link" href="Contato.html">Contato</a>
+                            <a class="nav-link" href="Sobre.html">Sobre</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- FIM BARRA DE NAVEGAÇÃO -->
+        <!-- INÍCIO DO CADASTRO -->
+        <main class="container d-flex m-2 justify-content-center flex-column">
+            <h1>Cadastro Cliente</h1>
+            <form action="">
+                <!--Nome-->
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="form-control" required placeholder="Nome:">
+                </div>
+                <!--Email-->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control" required placeholder="Email:">
+                </div>
+                <!--Gênero-->
+                <div class="mb-3">
+                    <input type="radio" name="opc" id="masc" value="masc" required>
+                    <label for="masc">masculino</label>
+                    <input type="radio" name="opc" id="fem" value="fem" required>
+                    <label for="fem">feminino</label>
+                </div>
+                <!--Data de Nascimento-->
+                <div class="mb-3">
+                    <label for="data" class="form-label">Data de Nascimento:</label>
+                    <input type="date" name="data" id="data" class="form-control" required>
+                </div>
+                <!--Cidade-->
+                <div class="mb-3">
+                    <label for="cidade" class="form-label">Cidade:</label>
+                    <input type="text" id="cidade" class="form-control" required placeholder="Digite o nome da Cidade:">
+                </div>
+                <!--Estado-->
+                <label for="estado" class="form-label">Estado:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Escolha um Estado:</option>
+                    <option value="1">Acre</option>
+                    <option value="2">Alagoas</option>
+                    <option value="3">Amapá</option>
+                    <option value="4">Amazonas</option>
+                    <option value="5">Bahia</option>
+                    <option value="6">Ceará</option>
+                    <option value="7">Espírito Santo</option>
+                    <option value="8">Goiás</option>
+                    <option value="9">Maranhão</option>
+                    <option value="10">Mato Grosso</option>
+                    <option value="11">Mato Grosso do Sul</option>
+                    <option value="12">Minas Gerais</option>
+                    <option value="13">Pará</option>
+                    <option value="14">Paraíba</option>
+                    <option value="15">Paraná</option>
+                    <option value="16">Pernambuco</option>
+                    <option value="17">Piauí</option>
+                    <option value="18">Rio de Janeiro</option>
+                    <option value="19">Rio Grande do Norte</option>
+                    <option value="20">Rio Grande do Sul</option>
+                    <option value="21">Rondônia</option>
+                    <option value="22">Roraima</option>
+                    <option value="23">Santa Catarina</option>
+                    <option value="24">São Paulo</option>
+                    <option value="25">Sergipe</option>
+                    <option value="26">Tocantins</option>
+                </select>
+                <!--Telefone-->
+                <div class="mb-3">
+                    <label for="tel" class="form-label">Telefone:</label>
+                    <input type="tel" name="tel" id="tel" class="form-control" maxlength="11" required
+                        placeholder="Ex: 11912345678">
+                </div>
+                <!--Button enviar-->
+                <div class="m-1">
+                    <input type="submit" class="btn btn-primary " value="Enviar">
+                    <input type="reset" class="btn btn-primary" value="Limpar">
+                </div>
+                <div class="m-1">
+                    <a class="btn btn-primary" href="Cadastro de Destino.html" role="button">Clique aqui para fazer o
+                        Cadastro de Destino</a>
+                </div>
+            </form>
+        </main>
+        <!-- FIM DO CADASTRO -->
+        <!-- INÍCIO DO FOOTER -->
+        <footer class="pt-4 my-md-0 pt-md-2 border-top bg-warning">
+            <div class="row">
+                <div class="col-6 m-lg-auto col-md">
+                    <img src="../../IMG/Logo (laranja).png" width="240px" height="140px">
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="sky">SKYTOUR</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="../Home.html">Home</a>
+                        </li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../subPaginas/Cadastro.html">Cadastro</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../subPaginas/Destino pg.01.html">Destino</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../subPaginas/Contato.html">Contato</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../subPaginas/Sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- FIM DO FOOTER -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>

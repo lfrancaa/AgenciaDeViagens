@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro Destino</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../subPaginas/subPastaCSS/Cadastro.css">
+</head>
+
+<body>
+    <div class="section">
+        <!-- INÍCIO BARRA DE NAVEGAÇÃO -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                <div class="container-fluid">
+                    <div>
+                        <img src="../../IMG/Logo.png" width="250px" height="120px">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../Home.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="Cadastro.html">Cadastro</a>
+                            <a class="nav-link" href="Destino pg.01.html">Destino</a>
+                            <a class="nav-link" href="Promoções.html">Promoções</a>
+                            <a class="nav-link" href="../subPaginas/PagamentoD01.html">Pagamento</a>
+                            <a class="nav-link" href="Contato.html">Contato</a>
+                            <a class="nav-link" href="Sobre.html">Sobre</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- FIM BARRA DE NAVEGAÇÃO -->
+        <!-- INÍCIO DO CADASTRO -->
+        <main class="container d-flex m-2 justify-content-center flex-column">
+            <h1>Cadastro de Destino</h1>
+            <form action="">
+                <!--Nome do Passageiro-->
+                <div class="mb-3 m-1">
+                    <label for="nome" class="form-label">Nome do Passageiro Responsável:</label>
+                    <input type="text" name="nome" id="nome" class="form-control" required placeholder="Nome:">
+                    <div class="mb-3 m-1">
+                        <label for="mensagem" class="form-label">Dependentes:</label>
+                        <textarea class="form-control" id="dependentes" rows="3"></textarea>
+                    </div>
+                </div>
+                <!--Documentação-->
+                <div class="mb-3 m-1">
+                    <label for="text" class="form-label">Documentação do Passageiro Responsável:</label>
+                    <input type="text" name="doc" id="doc" class="form-control" required placeholder="CPF/RG/CNH:">
+                    <div class="mb-3 m-1">
+                        <label for="mensagem" class="form-label">Documentação dos Dependentes:</label>
+                        <textarea class="form-control" id="dependentes" rows="3"></textarea>
+                    </div>
+                </div>
+                <!--Data de Ida-->
+                <div class="mb-3 m-1">
+                    <label for="data" class="form-label">Data de Ida:</label>
+                    <input type="date" name="data" id="data" class="form-control" required>
+                </div>
+                <!--Data de Volta-->
+                <div class="mb-3 m-1">
+                    <label for="data" class="form-label">Data de Volta:</label>
+                    <input type="date" name="data" id="data" class="form-control" required>
+                </div>
+                <!--Local de Partida-->
+                <div class="mb-3">
+                    <label for="localPartida" class="form-label">Local de Origem:</label>
+                    <div class="m-1"><input type="text" id="localPartida" class="form-control" required
+                            placeholder="Local de Partida:"></div>
+                    <div class="m-1"><input type="text" id="destinoFinal" class="form-control" required
+                            placeholder="Destino Final:"></div>
+                </div>
+                <!--Button enviar-->
+                <input type="submit" class="btn btn-primary" value="Enviar">
+                <input type="reset" class="btn btn-primary" value="Limpar">
+            </form>
+        </main>
+        <!-- FIM DO CADASTRO -->
+        <!-- INÍCIO DO FOOTER -->
+        <footer class="pt-4 my-md-0 pt-md-2 border-top bg-warning">
+            <div class="row">
+                <div class="col-6 m-lg-auto col-md">
+                    <img src="../../IMG/Logo (laranja).png" width="240px" height="140px">
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="sky">SKYTOUR</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="../Home.html">Home</a>
+                        </li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../subPaginas/Cadastro.html">Cadastro</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../subPaginas/Destino pg.01.html">Destino</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../subPaginas/Contato.html">Contato</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../subPaginas/Sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- FIM DO FOOTER -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>

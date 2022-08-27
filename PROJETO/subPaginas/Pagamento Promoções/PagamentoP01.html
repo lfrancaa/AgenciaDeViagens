@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Pagamento</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../subPaginas/subPastaCSS/Pagamento.css">
+</head>
+
+<body>
+    <div class="section">
+        <!-- INÍCIO BARRA DE NAVEGAÇÃO -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                <div class="container-fluid">
+                    <div>
+                        <img src="../../../IMG/Logo.png" width="250px" height="120px">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../../Home.html">Home</a>
+                            <a class="nav-link" href="../Cadastro.html">Cadastro</a>
+                            <a class="nav-link" href="../Destino pg.01.html">Destino</a>
+                            <a class="nav-link" href="../Promoções.html">Promoções</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="../../subPaginas/PagamentoD01.html">Pagamento</a>
+                            <a class="nav-link" href="../Contato.html">Contato</a>
+                            <a class="nav-link" href="../Sobre.html">Sobre</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- FIM BARRA DE NAVEGAÇÃO -->
+        <!-- INÍCIO DA ÁREA DE PAGAMENTO -->
+        <div class="container">
+            <main>
+                <div class="py-5 text-center">
+                    <img class="d-block mx-auto mb-4" src="../../../IMG/LogoNegativo.png" alt="" width="300px"
+                        height="150px">
+                    <h2>Por favor, verifique o Formulário!</h2>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-5 col-lg-4 order-md-last">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Seu carrinho</span>
+                        </h4>
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0"> Fujinomiya, Shizuoka, Japão </h6>
+                                    <small class="text-muted">(Modelo de Demonstração)</small>
+                                </div>
+                                <span class="text-muted">R$10.724,00</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between bg-light">
+                                <div class="text-success">
+                                    <h6 class="my-0">Código promocional</h6>
+                                </div>
+                                <span class="text-success">-R$1.224,00</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Total (R$)</span>
+                                <strong>R$9.500,00</strong>
+                            </li>
+                        </ul>
+                        <form class="card p-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control" required placeholder="Código promocional">
+                                <button type="submit" class="btn btn-secondary">Resgatar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-7 col-lg-8">
+                        <h4 class="mb-3">Dados Cadastrais</h4>
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label for="primeiroNome" class="form-label">Primeiro Nome</label>
+                                    <input type="text" class="form-control" id="primeiroNome"
+                                        placeholder="Primeiro Nome" value="" required>
+                                    <div class="invalid-feedback">
+                                        É necessário nome válido.
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="sobrenome" class="form-label">Sobrenome</label>
+                                    <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome"
+                                        value="" required>
+                                    <div class="invalid-feedback">
+                                        É necessário sobrenome válido.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="nomeUsuario" class="form-label">Nome de Usuário</label>
+                                    <div class="input-group has-validation">
+                                        <span class="input-group-text">@</span>
+                                        <input type="text" class="form-control" id="nomeUsuario"
+                                            placeholder="Nome de Usuário" required>
+                                        <div class="invalid-feedback">
+                                            Seu nome de usuário é necessário.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email <span
+                                            class="text-muted">(Opcional)</span></label>
+                                    <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+                                    <div class="invalid-feedback">
+                                        Por favor, insira um endereço de e-mail válido para atualizações de envio.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="endereco" class="form-label">Endereço</label>
+                                    <input type="text" class="form-control" id="endereco"
+                                        placeholder="Rua, Bairro, Cidade, Município" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, digite seu endereço.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="complemento" class="form-label">Complemento<span
+                                            class="text-muted">(Opcional)</span></label>
+                                    <input type="text" class="form-control" id="complemento"
+                                        placeholder="Apartamento ou Numero da Casa">
+                                </div>
+                                <div class="col-md-5">
+                                    <label for="país" class="form-label">País</label>
+                                    <select class="form-select" id="país" required>
+                                        <option value="">Escolher...</option>
+                                        <option>Brasil</option>
+                                        <option>Canadá</option>
+                                        <option>Estados Unidos</option>
+                                        <option>França</option>
+                                        <option>Inglaterra</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Por favor, selecione um país válido.
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="estado " class="form-label">Estado</label>
+                                    <select class="form-select" id="estado " required>
+                                        <option value="">Escolher...</option>
+                                        <option>Acre</option>
+                                        <option>Alagoas</option>
+                                        <option>Amapá</option>
+                                        <option>Amazonas</option>
+                                        <option>Bahia</option>
+                                        <option>Ceará</option>
+                                        <option>Espírito Santo</option>
+                                        <option>Goiás</option>
+                                        <option>Maranhão</option>
+                                        <option>Mato Grosso</option>
+                                        <option>Mato Grosso do Sul</option>
+                                        <option>Minas Gerais</option>
+                                        <option>Pará</option>
+                                        <option>Paraíba</option>
+                                        <option>Paraná</option>
+                                        <option>Pernambuco</option>
+                                        <option>Piauí</option>
+                                        <option>Rio de Janeiro</option>
+                                        <option>Rio Grande do Norte</option>
+                                        <option>Rio Grande do Sul</option>
+                                        <option>Rondônia</option>
+                                        <option>Roraima</option>
+                                        <option>Santa Catarina</option>
+                                        <option>São Paulo</option>
+                                        <option>Sergipe</option>
+                                        <option>Tocantins</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Por favor, forneça um estado válido.
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="cep" class="form-label">CEP</label>
+                                    <input type="text" class="form-control" id="cep" placeholder="00000-000" required>
+                                    <div class="invalid-feedback">
+                                        CEP necessário.
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="salvar-info">
+                                <label class="form-check-label" for="salvar-info">Salvar essas informações para a
+                                    próxima vez.
+                                </label>
+                            </div>
+                            <hr class="my-4">
+                            <h4 class="mb-3">Pagamento</h4>
+                            <div class="my-3">
+                                <div class="form-check">
+                                    <input id="credito" name="paymentMethod" type="radio" class="form-check-input"
+                                        checked required>
+                                    <label class="form-check-label" for="credito">Cartão de Crédito</label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="debito" name="paymentMethod" type="radio" class="form-check-input"
+                                        required>
+                                    <label class="form-check-label" for="debito">Cartão de Débito</label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
+                                        required>
+                                    <label class="form-check-label" for="paypal">PayPal</label>
+                                </div>
+                            </div>
+                            <div class="row gy-3">
+                                <div class="col-md-6">
+                                    <label for="cc-name" class="form-label">Nome no Cartão</label>
+                                    <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                    <small class="text-muted">Nome completo como exibido no cartão</small>
+                                    <div class="invalid-feedback">
+                                        Nome no cartão é necessário
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="cc-number" class="form-label">Número do Cartão</label>
+                                    <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Número do cartão de crédito é necessário
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="cc-expiracao" class="form-label">Expiração</label>
+                                    <input type="text" class="form-control" id="cc-expiracao" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Data de validade necessária
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="cc-cvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Código de segurança necessário
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <input class="w-100 btn btn-primary btn-lg m-1" type="reset"
+                                value="Limpar as Informações"></input>
+                            <input class="w-100 btn btn-primary btn-lg m-1" type="submit"
+                                value="Clique para Finalizar"></input>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- FIM DA ÁREA DE PAGAMENTO -->
+        <!-- INÍCIO DO FOOTER -->
+        <footer class="pt-4 my-md-0 pt-md-2 border-top bg-warning">
+            <div class="row">
+                <div class="col-6 m-lg-auto col-md">
+                    <img src="../../../IMG/Logo (laranja).png" width="240px" height="140px">
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="sky">SKYTOUR</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="../../Home.html">Home</a>
+                        </li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../../subPaginas/Cadastro.html">Cadastro</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../../subPaginas/Destino pg.01.html">Destino</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../../subPaginas/Contato.html">Contato</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../../subPaginas/Sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- FIM DO FOOTER -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
