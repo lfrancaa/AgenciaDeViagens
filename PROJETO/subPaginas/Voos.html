@@ -30,8 +30,11 @@
                             <a class="nav-link" href="Cadastro.html">Cadastro</a>
                             <a class="nav-link" href="Destino pg.01.html">Destino</a>
                             <a class="nav-link" href="Promoções.html">Promoções</a>
+                            <a class="nav-link active" aria-current="page" href="Voos.html">Voos</a>
+                            <a class="nav-link" href="Hoteis.html">Hotéis</a>
                             <a class="nav-link" href="../subPaginas/PagamentoD01.html">Pagamento</a>
-                            <a class="nav-link active" aria-current="page" href="Contato.html">Contato</a>
+                            <a class="nav-link" href="Passagem.html">Passagem</a>
+                            <a class="nav-link" href="Contato.html">Contato</a>
                             <a class="nav-link" href="Sobre.html">Sobre</a>
                         </div>
                     </div>
@@ -39,278 +42,294 @@
             </nav>
         </header>
         <!-- FIM BARRA DE NAVEGAÇÃO -->
-        <!-- INÍCIO DO CARROSSEL -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../../IMG/Voo01.jpg" class="d-block w-100" style="height: 800px; object-fit: cover;"
-                        alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../IMG/Voo02.jpg" class="d-block w-100" style="height: 800px; object-fit: cover;"
-                        alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../IMG/Voo03.jpg" class="d-block w-100" style="height: 800px; object-fit: cover;"
-                        alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../IMG/Voo04.jpg" class="d-block w-100" style="height: 800px; object-fit: cover;"
-                        alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../IMG/Voo05.jpg" class="d-block w-100" style="height: 800px; object-fit: cover;"
-                        alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../IMG/Voo06.jpg" class="d-block w-100" style="height: 800px; object-fit: cover;"
-                        alt="...">
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+        <!-- INÍCIO DO BANNER -->
+        <div class="position-relative overflow-hidden md-1 md-1">
+            <img src="../../IMG/Aeroporto.jpg" style="height: 700px; width: 100%;">
         </div>
-        <!-- FIM DO CARROSSEL -->
+        <!-- FIM DO BANNER -->
         <!-- INÍCIO DA ÁREA DE VOO -->
         <main class="container d-flex justify-content-center flex-column p-3">
-            <table class="table">
-                <thead class="table table-dark table-striped">
-                    <tr>
-                        <th class="col">Linha Aérea</th>
-                        <td class="col">Origem</td>
-                        <td class="col">Destino</td>
-                        <td class="col">Partida</td>
-                        <td class="col">Chegada</td>
-                        <td class="col">Paradas</td>
-                        <td class="col">Preço</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="../../IMG/GOL.png" width="120px" height="45px"></td>
-                        <td>São Paulo(GRU)</td>
-                        <td>Rio de Janeiro(GIG)</td>
-                        <td>13:10 20/07/22</td>
-                        <td>14:10 27/07/22</td>
-                        <td>2</td>
-                        <td>R$175,00</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../../IMG/GOL.png" width="120px" height="45px"></td>
-                        <td>São Paulo(GRU)</td>
-                        <td>Rio de Janeiro(GIG)</td>
-                        <td>13:10 20/07/22</td>
-                        <td>14:10 27/07/22</td>
-                        <td>2</td>
-                        <td>R$175,00</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="compra">
-                <input type="submit" class="float-end btn btn-warning btn btn-outline-light m-1" value="Comprar"></input>
-            </div>
-            <table class="table">
-                <thead class="table table-dark table-striped">
-                    <tr>
-                        <th class="col">Linha Aérea</th>
-                        <td class="col">Origem</td>
-                        <td class="col">Destino</td>
-                        <td class="col">Partida</td>
-                        <td class="col">Chegada</td>
-                        <td class="col">Paradas</td>
-                        <td class="col">Preço</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="../../IMG/LATAM.png" width="150px" height="60px"></td>
-                        <td>São Paulo(GRU)</td>
-                        <td>Rio de Janeiro(GIG)</td>
-                        <td>13:10 20/07/22</td>
-                        <td>14:10 27/07/22</td>
-                        <td>2</td>
-                        <td>R$175,00</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../../IMG/LATAM.png" width="150px" height="60px"></td>
-                        <td>São Paulo(GRU)</td>
-                        <td>Rio de Janeiro(GIG)</td>
-                        <td>13:10 20/07/22</td>
-                        <td>14:10 27/07/22</td>
-                        <td>2</td>
-                        <td>R$175,00</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="compra">
-                <input type="submit" class="float-end btn btn-warning btn btn-outline-light m-1" value="Comprar"></input>
-            </div>
-            <table class="table">
-                <thead class="table table-dark table-striped">
-                    <tr>
-                        <th class="col">Linha Aérea</th>
-                        <td class="col">Origem</td>
-                        <td class="col">Destino</td>
-                        <td class="col">Partida</td>
-                        <td class="col">Chegada</td>
-                        <td class="col">Paradas</td>
-                        <td class="col">Preço</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="../../IMG/AZUL-AIRLINES.png" width="150px" height="50px"></td>
-                        <td>São Paulo(GRU)</td>
-                        <td>Rio de Janeiro(GIG)</td>
-                        <td>13:10 20/07/22</td>
-                        <td>14:10 27/07/22</td>
-                        <td>2</td>
-                        <td>R$175,00</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../../IMG/AZUL-AIRLINES.png" width="150px" height="50px"></td>
-                        <td>São Paulo(GRU)</td>
-                        <td>Rio de Janeiro(GIG)</td>
-                        <td>13:10 20/07/22</td>
-                        <td>14:10 27/07/22</td>
-                        <td>2</td>
-                        <td>R$175,00</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="compra">
-                <input type="submit" class="float-end btn btn-warning btn btn-outline-light m-1" value="Comprar"></input>
-            </div>
-            <table class="table">
-                <thead class="table table-dark table-striped">
-                    <tr>
-                        <th class="col">Linha Aérea</th>
-                        <td class="col">Origem</td>
-                        <td class="col">Destino</td>
-                        <td class="col">Partida</td>
-                        <td class="col">Chegada</td>
-                        <td class="col">Paradas</td>
-                        <td class="col">Preço</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="../../IMG/GOL.png" width="120px" height="45px"></td>
-                        <td>São Paulo(GRU)</td>
-                        <td>Rio de Janeiro(GIG)</td>
-                        <td>13:10 20/07/22</td>
-                        <td>14:10 27/07/22</td>
-                        <td>2</td>
-                        <td>R$175,00</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../../IMG/GOL.png" width="120px" height="45px"></td>
-                        <td>São Paulo(GRU)</td>
-                        <td>Rio de Janeiro(GIG)</td>
-                        <td>13:10 20/07/22</td>
-                        <td>14:10 27/07/22</td>
-                        <td>2</td>
-                        <td>R$175,00</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="compra">
-                <input type="submit" class="float-end btn btn-warning btn btn-outline-light m-1" value="Comprar"></input>
-            </div>
-            <table class="table">
-                <thead class="table table-dark table-striped">
-                    <tr>
-                        <th class="col">Linha Aérea</th>
-                        <td class="col">Origem</td>
-                        <td class="col">Destino</td>
-                        <td class="col">Partida</td>
-                        <td class="col">Chegada</td>
-                        <td class="col">Paradas</td>
-                        <td class="col">Preço</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="../../IMG/LATAM.png" width="150px" height="60px"></td>
-                        <td>São Paulo(GRU)</td>
-                        <td>Rio de Janeiro(GIG)</td>
-                        <td>13:10 20/07/22</td>
-                        <td>14:10 27/07/22</td>
-                        <td>2</td>
-                        <td>R$175,00</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../../IMG/LATAM.png" width="150px" height="60px"></td>
-                        <td>São Paulo(GRU)</td>
-                        <td>Rio de Janeiro(GIG)</td>
-                        <td>13:10 20/07/22</td>
-                        <td>14:10 27/07/22</td>
-                        <td>2</td>
-                        <td>R$175,00</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="compra">
-                <input type="submit" class="float-end btn btn-warning btn btn-outline-light m-1" value="Comprar"></input>
-            </div>
-            <table class="table">
-                <thead class="table table-dark table-striped">
-                    <tr>
-                        <th class="col">Linha Aérea</th>
-                        <td class="col">Origem</td>
-                        <td class="col">Destino</td>
-                        <td class="col">Partida</td>
-                        <td class="col">Chegada</td>
-                        <td class="col">Paradas</td>
-                        <td class="col">Preço</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="../../IMG/AZUL-AIRLINES.png" width="150px" height="50px"></td>
-                        <td>São Paulo(GRU)</td>
-                        <td>Rio de Janeiro(GIG)</td>
-                        <td>13:10 20/07/22</td>
-                        <td>14:10 27/07/22</td>
-                        <td>2</td>
-                        <td>R$175,00</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../../IMG/AZUL-AIRLINES.png" width="150px" height="50px"></td>
-                        <td>São Paulo(GRU)</td>
-                        <td>Rio de Janeiro(GIG)</td>
-                        <td>13:10 20/07/22</td>
-                        <td>14:10 27/07/22</td>
-                        <td>2</td>
-                        <td>R$175,00</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="compra">
-                <input type="submit" class="float-end btn btn-warning btn btn-outline-light m-1" value="Comprar"></input>
-            </div>
+            <thead class="table  table-striped">
+                <table class="table table-light">
+                    <thead class="table table-dark table-striped">
+                        <tr>
+                            <td class="col">Origem</td>
+                            <td class="col">Destino</td>
+                            <td class="col">Check-in</td>
+                            <td class="col">Check-out</td>
+                            <td class="col">Localizar:</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Escolha um Estado:</option>
+                                    <option value="1">Rio de Janeiro</option>
+                                    <option value="2">São Paulo</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Escolha um Destino:</option>
+                                    <option value="1">Alberta, Canadá</option>
+                                    <option value="2">Bangkokl, Tailândia</option>
+                                    <option value="3">Chichén-Itzá, Yuc., Mexico</option>
+                                    <option value="4">Dublin, Irlanda</option>
+                                    <option value="5">Fernando de Noronha, Brasil</option>
+                                    <option value="6">Fujinomiya, Shizuoka, Japão</option>
+                                    <option value="7">Ilhas Maldivas, Ásia Meridional</option>
+                                    <option value="8">Kruger Park, África do Sul</option>
+                                    <option value="9">Lagos, Portugal</option>
+                                    <option value="10">Londres, Inglaterra</option>
+                                    <option value="11">Machu Picchu, Peru</option>
+                                    <option value="12">Madri, Espanha</option>
+                                    <option value="13">Patagônia, Chile</option>
+                                    <option value="14">Rio de Janeiro, Brasil</option>
+                                    <option value="15">Roma, Itália</option>
+                                    <option value="16">São Paulo, Brasil</option>
+                                    <option value="17">Santorini, Grecia</option>
+                                    <option value="18">Torre Eiffel, Paris</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="mb-3">
+                                    <input type="date" name="data" id="data" class="form-control" required>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="mb-3">
+                                    <input type="date" name="data" id="data" class="form-control" required>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-primary" type="submit">Buscar Voos</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table">
+                    <thead class="table table-dark table-striped">
+                        <tr>
+                            <th class="col">Linha Aérea</th>
+                            <td class="col">Origem</td>
+                            <td class="col">Destino</td>
+                            <td class="col">Partida</td>
+                            <td class="col">Chegada</td>
+                            <td class="col">Paradas</td>
+                            <td class="col">Preço</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="../../IMG/GOL.png" width="120px" height="45px"></td>
+                            <td>São Paulo(GRU)</td>
+                            <td>Rio de Janeiro(GIG)</td>
+                            <td>13:10 20/07/22</td>
+                            <td>14:10 27/07/22</td>
+                            <td>2</td>
+                            <td>R$175,00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../IMG/GOL.png" width="120px" height="45px"></td>
+                            <td>São Paulo(GRU)</td>
+                            <td>Rio de Janeiro(GIG)</td>
+                            <td>13:10 20/07/22</td>
+                            <td>14:10 27/07/22</td>
+                            <td>2</td>
+                            <td>R$175,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="compra">
+                    <input type="submit" class="float-end btn btn-warning btn btn-outline-light m-1"
+                        value="Comprar"></input>
+                </div>
+                <table class="table">
+                    <thead class="table table-dark table-striped">
+                        <tr>
+                            <th class="col">Linha Aérea</th>
+                            <td class="col">Origem</td>
+                            <td class="col">Destino</td>
+                            <td class="col">Partida</td>
+                            <td class="col">Chegada</td>
+                            <td class="col">Paradas</td>
+                            <td class="col">Preço</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="../../IMG/LATAM.png" width="150px" height="60px"></td>
+                            <td>São Paulo(GRU)</td>
+                            <td>Rio de Janeiro(GIG)</td>
+                            <td>13:10 20/07/22</td>
+                            <td>14:10 27/07/22</td>
+                            <td>2</td>
+                            <td>R$175,00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../IMG/LATAM.png" width="150px" height="60px"></td>
+                            <td>São Paulo(GRU)</td>
+                            <td>Rio de Janeiro(GIG)</td>
+                            <td>13:10 20/07/22</td>
+                            <td>14:10 27/07/22</td>
+                            <td>2</td>
+                            <td>R$175,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="compra">
+                    <input type="submit" class="float-end btn btn-warning btn btn-outline-light m-1"
+                        value="Comprar"></input>
+                </div>
+                <table class="table">
+                    <thead class="table table-dark table-striped">
+                        <tr>
+                            <th class="col">Linha Aérea</th>
+                            <td class="col">Origem</td>
+                            <td class="col">Destino</td>
+                            <td class="col">Partida</td>
+                            <td class="col">Chegada</td>
+                            <td class="col">Paradas</td>
+                            <td class="col">Preço</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="../../IMG/AZUL-AIRLINES.png" width="150px" height="50px"></td>
+                            <td>São Paulo(GRU)</td>
+                            <td>Rio de Janeiro(GIG)</td>
+                            <td>13:10 20/07/22</td>
+                            <td>14:10 27/07/22</td>
+                            <td>2</td>
+                            <td>R$175,00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../IMG/AZUL-AIRLINES.png" width="150px" height="50px"></td>
+                            <td>São Paulo(GRU)</td>
+                            <td>Rio de Janeiro(GIG)</td>
+                            <td>13:10 20/07/22</td>
+                            <td>14:10 27/07/22</td>
+                            <td>2</td>
+                            <td>R$175,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="compra">
+                    <input type="submit" class="float-end btn btn-warning btn btn-outline-light m-1"
+                        value="Comprar"></input>
+                </div>
+                <table class="table">
+                    <thead class="table table-dark table-striped">
+                        <tr>
+                            <th class="col">Linha Aérea</th>
+                            <td class="col">Origem</td>
+                            <td class="col">Destino</td>
+                            <td class="col">Partida</td>
+                            <td class="col">Chegada</td>
+                            <td class="col">Paradas</td>
+                            <td class="col">Preço</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="../../IMG/GOL.png" width="120px" height="45px"></td>
+                            <td>São Paulo(GRU)</td>
+                            <td>Rio de Janeiro(GIG)</td>
+                            <td>13:10 20/07/22</td>
+                            <td>14:10 27/07/22</td>
+                            <td>2</td>
+                            <td>R$175,00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../IMG/GOL.png" width="120px" height="45px"></td>
+                            <td>São Paulo(GRU)</td>
+                            <td>Rio de Janeiro(GIG)</td>
+                            <td>13:10 20/07/22</td>
+                            <td>14:10 27/07/22</td>
+                            <td>2</td>
+                            <td>R$175,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="compra">
+                    <input type="submit" class="float-end btn btn-warning btn btn-outline-light m-1"
+                        value="Comprar"></input>
+                </div>
+                <table class="table">
+                    <thead class="table table-dark table-striped">
+                        <tr>
+                            <th class="col">Linha Aérea</th>
+                            <td class="col">Origem</td>
+                            <td class="col">Destino</td>
+                            <td class="col">Partida</td>
+                            <td class="col">Chegada</td>
+                            <td class="col">Paradas</td>
+                            <td class="col">Preço</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="../../IMG/LATAM.png" width="150px" height="60px"></td>
+                            <td>São Paulo(GRU)</td>
+                            <td>Rio de Janeiro(GIG)</td>
+                            <td>13:10 20/07/22</td>
+                            <td>14:10 27/07/22</td>
+                            <td>2</td>
+                            <td>R$175,00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../IMG/LATAM.png" width="150px" height="60px"></td>
+                            <td>São Paulo(GRU)</td>
+                            <td>Rio de Janeiro(GIG)</td>
+                            <td>13:10 20/07/22</td>
+                            <td>14:10 27/07/22</td>
+                            <td>2</td>
+                            <td>R$175,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="compra">
+                    <input type="submit" class="float-end btn btn-warning btn btn-outline-light m-1"
+                        value="Comprar"></input>
+                </div>
+                <table class="table">
+                    <thead class="table table-dark table-striped">
+                        <tr>
+                            <th class="col">Linha Aérea</th>
+                            <td class="col">Origem</td>
+                            <td class="col">Destino</td>
+                            <td class="col">Partida</td>
+                            <td class="col">Chegada</td>
+                            <td class="col">Paradas</td>
+                            <td class="col">Preço</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="../../IMG/AZUL-AIRLINES.png" width="150px" height="50px"></td>
+                            <td>São Paulo(GRU)</td>
+                            <td>Rio de Janeiro(GIG)</td>
+                            <td>13:10 20/07/22</td>
+                            <td>14:10 27/07/22</td>
+                            <td>2</td>
+                            <td>R$175,00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../IMG/AZUL-AIRLINES.png" width="150px" height="50px"></td>
+                            <td>São Paulo(GRU)</td>
+                            <td>Rio de Janeiro(GIG)</td>
+                            <td>13:10 20/07/22</td>
+                            <td>14:10 27/07/22</td>
+                            <td>2</td>
+                            <td>R$175,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="compra">
+                    <input type="submit" class="float-end btn btn-warning btn btn-outline-light m-1"
+                        value="Comprar"></input>
+                </div>
         </main>
         <!-- FIM DA ÁREA DE VOO -->
         <!-- INÍCIO DO FOOTER -->
@@ -328,6 +347,12 @@
                                 href="../subPaginas/Cadastro.html">Cadastro</a></li>
                         <li class="mb-1"><a class="link-secondary text-decoration-none"
                                 href="../subPaginas/Destino pg.01.html">Destino</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../subPaginas/Voos.html">Voos</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../subPaginas/Hoteis.html">Hotéis</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                href="../subPaginas/Passagem.html">Passagem</a></li>
                         <li class="mb-1"><a class="link-secondary text-decoration-none"
                                 href="../subPaginas/Contato.html">Contato</a></li>
                         <li class="mb-1"><a class="link-secondary text-decoration-none"

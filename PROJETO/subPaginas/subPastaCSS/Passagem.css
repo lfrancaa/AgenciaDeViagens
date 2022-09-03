@@ -3,7 +3,8 @@ body {
 }
 
 main {
-    margin: 10px;
+    width: 100%;
+    min-height: calc(100vh - 200px);
 }
 
 footer {
@@ -11,19 +12,15 @@ footer {
     text-align: center;
 }
 
-.nav1 {
-    background-color: #526DC2;
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
 }
 
 .section {
     min-height: 100vh;
     width: 100%;
-}
-
-.contato {
-    border: solid 1px #adb5bd;
-    border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 .sky {

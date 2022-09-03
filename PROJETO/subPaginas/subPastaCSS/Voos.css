@@ -2,11 +2,6 @@ body {
     overflow-x: hidden;
 }
 
-main {
-    width: 100%;
-    min-height: calc(100vh - 200px);
-}
-
 footer {
     width: 100%;
     text-align: center;
@@ -30,11 +25,4 @@ footer {
 .sky {
     font-size: 15pt;
     color: rgb(90, 55, 149);
-}
-
-
-.compra{
-    /* float: right;
-    position: absolute;
-    bottom: 340px; */
 }
