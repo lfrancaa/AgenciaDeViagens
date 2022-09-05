@@ -26,3 +26,9 @@ footer {
     font-size: 15pt;
     color: rgb(90, 55, 149);
 }
+
+@media screen and (max-width: 768px){
+    xd{
+        width: 100%;
+    }
+}
