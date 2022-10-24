@@ -1,4 +1,4 @@
-package br.com.skytour.model;
+/*package br.com.skytour.model;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -17,7 +17,7 @@ public class MyUserDetails implements UserDetails {
         this.passageiro = passageiro;
     }
 	
-/*
+
 	private String userName;
 	private String password;
 	private boolean active; 
@@ -31,7 +31,7 @@ public class MyUserDetails implements UserDetails {
 				.map(SimpleGrantedAuthority::new)
 				.collect(Collectors.toList());
 	}
-*/	
+	
 	
     @Override
     public String getPassword() {
@@ -113,6 +113,7 @@ public class MyUserDetails implements UserDetails {
 		return active;
 	}
 	
-	*/
+	
 
 }
+*/

@@ -1,4 +1,4 @@
-package br.com.skytour.configuration;
+/*package br.com.skytour.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -21,61 +21,18 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	private UserDetailsService userDetailsService;
 	
 	@Override
-	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().antMatchers("/adminlte/**").permitAll().antMatchers("/img/**").permitAll()
-				.antMatchers("/js/**").permitAll().antMatchers("/plugins/**").permitAll().anyRequest().authenticated();
-		// .antMatchers("/**/cadastrar").hasAuthority(Perfil.ADMIN.toString())
-		// .antMatchers("/**/editar").hasAuthority(Perfil.ADMIN.toString())
-		// .antMatchers("/**/excluir").hasAuthority(Perfil.ADMIN.toString())
-
-        http.formLogin()
-        .loginPage("/login")
-        .defaultSuccessUrl("/passageiro")
-        .permitAll();
-
-    http.logout()
-        .logoutRequestMatcher(
-            new AntPathRequestMatcher("/logout", "GET")
-        )
-        .logoutSuccessUrl("/login");
-
-    http.rememberMe()
-        .key("chaverememberMe");
-
-		// http.rememberMe().key("chaverememberMe");
-
-	}
-	
-	// desabilita o spring security
-	/*
-	 @Override
-	    protected void configure(HttpSecurity httpSecurity) throws Exception {
-	        httpSecurity.authorizeRequests().antMatchers("/").permitAll();
-	    }
-	*/
-	 
-	@Override
-	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.userDetailsService(userDetailsService).passwordEncoder(new BCryptPasswordEncoder());
-	}
-	
-	/*
-	@Override
-	protected void configure(AuthenticationManagerBuilder auth) throws Exception{
-		auth.userDetailsService(userDetailsService);
-	}
-	
-	@Override
-	protected void configure(HttpSecurity http) throws Exception{
-		http.authorizeRequests()
-		.antMatchers("/admin").hasRole("ADMIN")
-		.antMatchers("/user").hasRole("ADMIN, USER")
-		.antMatchers("/").permitAll()
-		.and().formLogin();
-	}
-	
-	@Bean
-	public PasswordEncoder getPasswordEncoder() {return NoOpPasswordEncoder.getInstance();}
-	 */	
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+                .authorizeRequests()
+                .anyRequest().authenticated()
+                .and()
+                .formLogin(form -> form
+                        .loginPage("/login")
+                        .defaultSuccessUrl("/home", true)
+                        .permitAll()
+                ).logout(logout -> logout.logoutUrl("/logout")
+        ).csrf().disable(); // é essa linha aqui que resolve seu problema
+    }
 	
 }
+*/
