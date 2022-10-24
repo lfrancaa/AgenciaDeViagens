@@ -128,7 +128,12 @@ CREATE TABLE `passagem` (
   KEY `FKnfadu6lpv4pcsppm829mr5iep` (`id_hotel_fk`),
   KEY `FK34h0l6uy8ntgbudrn9gs8k5yw` (`id_passageiro_fk`),
   KEY `FKpvdlntjl43unyu6eaqk6ydwch` (`id_promocao_fk`),
-  KEY `FKif091oxmq0dn56b4ryxiwj5s8` (`id_voo_fk`)
+  KEY `FKif091oxmq0dn56b4ryxiwj5s8` (`id_voo_fk`),
+	CONSTRAINT `FK3gaitmxqeavaqe0oxlg63jjk2` FOREIGN KEY (`id_destino_fk`) REFERENCES `destino` (`id_destino`),
+	CONSTRAINT `FKnfadu6lpv4pcsppm829mr5iep` FOREIGN KEY (`id_hotel_fk`) REFERENCES `hotel` (`id_hotel`),
+    CONSTRAINT `FK34h0l6uy8ntgbudrn9gs8k5yw` FOREIGN KEY (`id_passageiro_fk`) REFERENCES `passageiro` (`id_passageiro`),
+    CONSTRAINT `FKpvdlntjl43unyu6eaqk6ydwch` FOREIGN KEY (`id_promocao_fk`) REFERENCES `promocao` (`id_promocao`),
+    CONSTRAINT `FKif091oxmq0dn56b4ryxiwj5s8` FOREIGN KEY (`id_voo_fk`) REFERENCES `voo` (`id_voo`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
